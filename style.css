@@ -1,0 +1,71 @@
+/* Couleurs personnalisées */
+:root {
+    --orange: #ff7f0e;
+    --gray: #6c757d;
+    --white: #5555c1;
+}
+
+body {
+    background: var(--gray);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--orange);
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.card {
+    border: none;
+}
+
+.card-header.bg-orange {
+    background-color: var(--orange);
+}
+
+.card-header.bg-gray {
+    background-color: var(--gray);
+}
+
+.scrolling-text {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: var(--white);
+    color: var(--gray);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.scrolling-text p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 1.6;
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.video-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
