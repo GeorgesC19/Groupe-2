@@ -15,38 +15,30 @@
         <div class="container-fluid">
             <!-- Logo de l'école -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="logo.jpg"  width="40" height="40" class="me-2"> GROUPE II
+                <img src="ressources/logo.jpg" width="40" height="40" class="me-2"> GROUPE II
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MASSONOL.html">MASSONOL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="BASSANGEN.html">BASSANGEN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MELINGUI.html">MELINGUI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="NKOMA.html">NKOMA</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MASSONOL.html">MASSONOL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="BASSANGEN.html">BASSANGEN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MELINGUI.html">MELINGUI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="NKOMA.html">NKOMA</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    
+
     <!-- Contenu principal -->
-    <div class="container-fluid py-5">
+    <div class="main-content container-fluid">
         <div class="row">
-            <!-- Carousel et blocs -->
-            <div class="col-md-6">
+            <!-- Texte défilant (gauche) -->
+            <div class="col-md-6 text-carousel">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <!-- Bloc 1 -->
@@ -67,7 +59,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Bloc 2 -->
                         <div class="carousel-item">
                             <div class="card bg-light shadow-lg">
@@ -97,16 +88,15 @@
                 </div>
             </div>
 
-            <!-- Vidéo -->
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <video src="video1.mp4" controls class="video-responsive"></video>
+            <!-- Vidéo en arrière-plan (droite) -->
+            <div class="col-md-6 video-background">
+                <video src="ressources/video1.mp4" autoplay loop muted></video>
             </div>
         </div>
     </div>
-
-    <!-- Pied de page -->
-    <footer class="text-center py-3 bg-dark text-white">
-        <p class="mb-0">© 2024 GROUPE II. Tous droits réservés.</p>
+    <!-- Pied de page avec Copyright -->
+    <footer class="text-center py-2 bg-dark text-white">
+        <p>© 2024 GROUPE II. Tous droits réservés.</p>
     </footer>
 
     <!-- Script Bootstrap -->

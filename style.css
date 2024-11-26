@@ -1,71 +1,52 @@
-/* Couleurs personnalisées */
-:root {
-    --orange: #ff7f0e;
-    --gray: #6c757d;
-    --white: #5555c1;
-}
-
+/* Style général */
 body {
-    background: var(--gray);
-    color: var(--white);
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: var(--orange);
+/* Couleur de la navbar */
+.bg-orange {
+    background-color: #ff6600;
 }
 
-.nav-link {
-    color: var(--white);
+/* Pied de page */
+footer {
+    margin-bottom: 0;
 }
 
-.nav-link:hover {
-    color: var(--orange);
-    text-decoration: underline;
+/* Conteneur principal */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card {
-    border: none;
+/* Texte défilant */
+.text-carousel {
+    padding: 20px;
+    background-color: #f8f9fa;
 }
 
-.card-header.bg-orange {
-    background-color: var(--orange);
-}
-
-.card-header.bg-gray {
-    background-color: var(--gray);
-}
-
-.scrolling-text {
-    height: 200px;
-    overflow: hidden;
+/* Style pour la vidéo */
+.video-background {
     position: relative;
-    background: var(--white);
-    color: var(--gray);
-    padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
-.scrolling-text p {
-    position: absolute;
+.video-background video {
     width: 100%;
     height: 100%;
-    margin: 0;
-    line-height: 1.6;
-    animation: scrollText 15s linear infinite;
+    object-fit: cover;
+    filter: brightness(0.7); /* Effet assombri */
 }
 
-@keyframes scrollText {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-
-.video-responsive {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+/* Scrolling texte */
+.scrolling-text {
+    max-height: 500px;
+    overflow-y: auto;
 }
