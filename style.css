@@ -50,3 +50,67 @@ footer {
     max-height: 500px;
     overflow-y: auto;
 }
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bouton Retour */
+.btn-dark {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Contenu de la page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+ul {
+    font-size: 1.2rem;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Photo */
+img.img-fluid {
+    max-width: 100%;
+    border: 3px solid #333;
+    border-radius: 50%; /* Cercle */
+}
+
+/* Pied de page */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Bouton de téléchargement */
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e55b00;
+}
