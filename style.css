@@ -52,7 +52,7 @@ footer {
 }
 
 
-}
+
 
 /* Contenu de la page */
 .container {
@@ -84,17 +84,14 @@ img.img-fluid {
 
 }
 
-/* Pied de page */
-footer {
-
-}
 
 /* Bouton de téléchargement */
 .btn-primary {
-    background-color: #ff6600;
+    background-color: #9329da;
     border: none;
 }
 
 .btn-primary:hover {
     background-color: #e55b00;
 
+}
