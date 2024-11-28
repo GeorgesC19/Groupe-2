@@ -98,7 +98,7 @@ img.img-fluid {
 /* Pied de page */
 footer {
     background-color: #343a40;
-    color: white;
+    color: rgb(234, 229, 229);
     padding: 10px 0;
     position: relative;
     bottom: 0;
