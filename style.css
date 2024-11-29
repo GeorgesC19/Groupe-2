@@ -121,3 +121,23 @@ footer {
 .btn-primary:hover {
     background-color: #e55b00;
 }
+.article {
+    overflow: hidden;
+    position: relative;
+}
+
+.article li{
+    float: left;
+    width: 10%;
+    position: relative;
+    transition: left 0.5s ease-in-out;
+}
+
+/* Pour déplacer les images */
+.active {
+    left: 0;
+}
+
+.next {
+    left: 100%;
+}
