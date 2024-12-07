@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	background-color: #fff;
+	color: #000;
+}
+
+header {
+	background-color: #000;
+	width: 100%;
+	height: 300px;
+	line-height: 300px;
+	text-align: right;
+	background-image: url(ressources/dinosaure-1.jpg);
+	background-repeat: no-repeat;
+	border-bottom: 1px solid grey;
+}
+header h1 {
+	font-family: 'Nosifer', cursive;
+	font-size: 22px;
+	text-shadow: 0px 0px 15px #fff;
+	transition: font-size 0.5s;
+    color: #ffff;
+}
+
+    
+nav {
+	width: 100%;
+	background-color: #222;
+	height: 60px;
+	text-align: right;
+}
+nav ul {
+	margin-right: 45px;
+}
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+}
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+	font-size: 19px;
+	letter-spacing: 1px;
+    
+}
+nav a:hover, .active {
+	color: yellow;
+	border-top: 4px solid orange;
+	border-bottom: 4px solid orange;
+}
+nav input[type=checkbox], .nav-mobile {
+	display: none;
+}
+nav input[type=checkbox]:checked ~ ul
+ {
+	display: block;
+}
+
+     
+section {
+	width: 100%;
+	margin-bottom: 15px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+section h1 {
+	text-align: center;
+	font-family: 'Nosifer', cursive;
+	font-size: 30px;
+	color: #f60;
+}
+.impaire {
+	background-color: #f0f0f0;
+	transition: background-color 5s;
+}
+.impaire:hover {
+	background-color: #fff;
+	transition: background-color 5s;
+}
+.paire {
+	background-color: #fff;
+	transition: background-color 5s;
+}
+.paire:hover {
+	background-color: #f0f0f0;
+	transition: background-color 5s;
+}
+article {
+	display: inline-block;
+	width: 25%;
+	border: 2px solid #FC0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	margin: 20px;
+	padding-top: 12px;
+	background-color: #E4E6E3;
+	box-shadow: 4px 4px 12px grey;
+}
+article:hover {
+	position: relative;
+	left: 4px;
+	top: 4px;
+}
+figcaption {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.img-dino {
+	width: 100%;
+}
+.desc {
+	padding: 5px;
+}
+.acces {
+	background-color: #FC0;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+.lien-acces {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F60;
+}
+.lien-acces:hover {
+	color: red;
+	transition: color 4s;
+}
+
+.content {
+	max-width: 800px;
+	margin: auto;
+}
+.ere-dinosaure {
+	width: 100%;
+	border-radius: 50%;
+}
+.gauche {
+	width: 25%;
+	float: left;
+	margin-right: 5%;
+}
+.droite {
+	width: 60%;
+	float: left;
+}
+
+.content:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+footer {
+	width: 100%;
+	background-color: #666;
+	height: 70px;
+	line-height: 70px;
+	color: #ccc;
+	text-align: center;
+	border-top: 2px solid #000;
+	font-style: italic;
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+	header h1 {
+	font-size: 45px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+
+	header h1 {
+	font-size: 80%;
+	text-shadow: 0px 0px 15px #000;
+	color: #fff;
+	}
+
+	nav {
+	text-align: center;
+	}
+	nav ul {
+	display: none;	
+	}
+	.nav-mobile {
+	display: block;
+	color: #fff;
+	font-size: 40px;
+	cursor: pointer;
+	}
+	nav li {
+	background-color: #8B0149;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	position: relative;
+	box-shadow: 5px 5px 10px #000;
+	}
+	nav li:hover {
+	background-color: #fc0185;
+	transition: background-color 3s;
+	}
+
+	.content {
+	width: 100%;
+	margin: 0px;
+}
+	
+    section h1 {
+	font-size: 17px;
+    }
+
+    article {
+	display: inline-block;
+	width: 80%;
+	border: 0px solid transparent;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	box-shadow: 0px 0px 0px transparent;
+    }
+	article:hover {
+	top: 0px;
+	left: 0px;	
+	background-color: #fff;
+	transition: background-color 2s;
+    }
+	.img-dino {
+	width: 45%;
+	border-radius: 50%;
+	margin-left: 7px;
+    }	
+	.acces {
+	background-color: transparent;
+	}
+}
+
+
