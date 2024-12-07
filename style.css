@@ -95,15 +95,4 @@ img.img-fluid {
     background-color: #e55b00;
 
 }
-.carousel {
-    overflow: hidden;
-    width: 500px;
-}
-.carousel-inner {
-    white-space: nowrap;
-    transition: transform 0.5s;
-}
-.carousel-item {
-    display: inline-block;
-    width: 500px;
-}
+
